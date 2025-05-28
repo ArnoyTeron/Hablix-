@@ -1,0 +1,106 @@
+---
+// Componente Descubre3.astro - Beneficios de Hablix para Empresas
+// Nota: Necesitarás añadir la imagen del laptop con dashboard en tus assets
+const laptopImg = "/src/assets/Image-container.svg"; // Cambiar por la imagen real cuando esté disponible
+const vector2 = "/src/assets/vector_der-izq.svg"; // Cambiar por la imagen real cuando esté disponible 
+---
+
+<section class="bg-[#001A45] text-white py-16 md:py-24 relative overflow-hidden">
+  <!-- Imagen de fondo bgiconcontact.svg -->
+  <div class="absolute inset-0 z-0 opacity-100">
+    <img 
+      src="/src/assets/bgiconcontact.svg" 
+      alt="" 
+      class="w-full h-full object-cover" 
+      aria-hidden="true"
+    />
+  </div>
+
+
+  <div class="container mx-auto px-4 sm:px-6 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+      <!-- Contenido de texto - lado izquierdo -->
+      <div class="w-full lg:w-1/2 mb-10 lg:mb-0 order-2 lg:order-1">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Descubre los<br />
+          Beneficios de Hablix<br />
+          para Empresas
+        </h2>
+        
+        <div class="h-3 w-60 bg-gradient-to-r from-[#e55934] to-transparent mb-8"></div>
+    
+
+        <p class="text-gray-300 mb-8 pt-72 pr-10">
+          <img 
+            src={laptopImg}    
+            alt="Dashboard de Hablix en un laptop" 
+            class="w-3xl h-auto rounded max-h-400 "
+          />
+        </div>
+      
+      
+      
+      <!-- Imagen y detalles de integración - lado derecho -->
+      <div class="w-full lg:w-1/2 order-1 lg:order-2">
+         <!-- Lista de beneficios -->
+         <div class="space-y-8">
+            <div>
+              <h3 class="text-4xl font-bold mb-2">Reducción de Costos</h3>
+              <p class="text-2xl text-gray-300">Elimina la necesidad de equipo físico costoso y mantenimiento.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-4xl font-bold mb-2">Flexibilidad Total</h3>
+              <p class=text-2xl"text-gray-300">Trabaja desde cualquier lugar con conexión a Internet.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-4xl font-bold mb-2">Productividad Aumentada</h3>
+              <p class="text-2xl text-gray-300">Mejora la colaboración y eficiencia de los equipos de trabajo.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-4xl font-bold mb-2">Soporte Técnico 24/7</h3>
+              <p class="text-2xl text-gray-300">Atención inmediata para resolver cualquier problema.</p>
+            </div>
+          </div>
+        
+          <div class="h-8 w-24 mb-12"></div>
+        <div>
+          <img 
+          src={vector2} 
+          style="height: 100%; margin-left: -10rem ;" 
+          alt="Linea de separación de texto" 
+          class=" pl-16 xl:max-w-5x1 min-h-[100px] sm:min-h-[50px] md:min-h-[50px] lg:min-h-[50px] xl:min-h-[75px] object-contain "
+        />
+
+          <h2 class="lg:text-6xl sm:text-4xl md:text-5xl font-bold mb-6  leading-tight">
+            Integración Sin<br />
+            Esfuerzo con Tus<br />
+            Sistemas
+          </h2>
+          
+          <div class="h-3 w-60 bg-gradient-to-r from-[#e55934] to-transparent mb-8"></div>
+          
+          <p class="text-2xl  text-gray-300 mb-8">
+            Hablix se conecta perfectamente con las herramientas que ya usas, 
+            permitiendo una transición sin complicaciones a un sistema de 
+            comunicaciones más eficiente y moderno.
+          </p>
+          
+          <div class="flex flex-wrap gap-8 sm:gap-16">
+            <div class="text-center">
+              <p class="text-4xl sm:text-5xl font-bold text-white mb-2">95 %</p>
+              <p class="text-2xl text-gray-300">Compatible con múltiples<br />plataformas y API abierta</p>
+            </div>
+            
+            <div class="text-center">
+              <p class="text-4xl sm:text-5xl font-bold text-white mb-2">100 %</p>
+              <p class="text-2xl text-gray-300">Seguridad garantizada en la<br />nube</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

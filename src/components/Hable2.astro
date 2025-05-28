@@ -1,0 +1,42 @@
+---
+const image = "/src/assets/phonehablix.svg"; 
+const phoneIcon = "/src/assets/Iconos/phoneicon.svg";
+const messageIcon = "/src/assets/Iconos/messageicon.svg";
+const vector2 = "/src/assets/vector_der-izq.svg"; // Cambiar por la imagen real cuando esté disponible 
+---
+ 
+<div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md">
+  <div class="md:w-1/2 pl-10 pr-10 pt-10 md:pt-0">
+    <img src={image} alt="Phone" class="rounded-lg" />
+  </div>
+  <div class="md:w-1/2 pl-5 mt-6 md:mt-0 md:ml-6 pr-6 pb-10">
+    
+    <img 
+    src={vector2} 
+    style="height: 100%; margin-left: -10rem ;" 
+    alt="Linea de separación de texto" 
+    class=" w-6xl min-h-[100px] sm:min-h-[50px] md:min-h-[50px] lg:min-h-[50px] xl:min-h-[75px] object-contain "
+  />
+
+    <h1 class=" -mt-16 text-6xl font-bold text-[#002655]">Hable con nuestro equipo</h1>
+    <div class="h-4 w-80 bg-gradient-to-r from-[#e55934] to-transparent mb-8 mt-8"></div>
+    <div class="mt-4 flex items-start">
+      <img src={phoneIcon} alt="Phone Icon" class="w-10 h-10 mr-10 mt-10" />
+      <div>
+        <h3 class="text-3xl font-semibold text-[#002655]">Llámanos</h3>
+        <p class="text-gray-700 sm:text-2xl">Nuestro equipo está disponible de 9 a.m. a 5 p.m. EST, de lunes a viernes.</p>
+        <a href="tel:+19395880350" class="text-red-600 text-2xl">(939) 588-0350</a>
+      </div>
+    </div>
+    <div class="mt-4 flex items-start">
+      <img src={messageIcon} alt="Message Icon" class="w-10 h-10 mr-10 mt-10" />
+      <div>
+        <h3 class="text-3xl font-semibold text-[#002655]">Envíenos un mensaje</h3>
+        <p class="text-gray-700 sm:text-2xl">No dude en ponerse en contacto con nosotros. Nuestro objetivo es responder dentro de 24 horas.</p>
+        <a href="mailto:info@hablix.net" class="text-red-600 text-2xl">info@hablix.net</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
